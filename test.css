@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+   
+    text-align: center;
+    padding: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  50px 30px 50px 30px;
+  }
+  
+  .dish {
+    background-color: #633;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 10px;
+    /*transform: rotate();*/
+    position: relative; /* Add this line to make .dish a relative container for absolute positioning */
+  }
+  
+  .section-title {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2px 10px;
+    background-color: #820202;
+    color: #fff;
+    margin: 0; /* Add this line to remove default margin */
+  }
+  
+  /* Media queries for tablet and mobile views */
+  @media screen and (max-width: 991px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .dish {
+      width: 48%;
+    }
+  
+    .sushi {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .dish {
+      width: 100%;
+    }
+  }
+  
